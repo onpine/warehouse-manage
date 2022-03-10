@@ -24,9 +24,9 @@
             登录
           </a-button>
         </a-form-model-item>
-        <a-form-model-item :wrapper-col="{ span: 14, offset: 8 }">
+        <!-- <a-form-model-item :wrapper-col="{ span: 14, offset: 8 }">
           <router-link to="/register">没有注册？去注册</router-link>
-        </a-form-model-item>
+        </a-form-model-item> -->
       </a-form-model>
     </div>
   </div>
@@ -84,9 +84,9 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (valid) {
           // this.login();
-          setStorage("id", 'onpine');
-          setStorage("token", 'onpine');
-           this.$router.push({ path: "/pmim/all" });
+          setStorage("id", "onpine");
+          setStorage("token", "onpine");
+          this.$router.push({ path: "/home" });
         } else {
           console.log("error submit!!");
           return false;

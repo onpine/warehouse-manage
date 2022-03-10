@@ -13,11 +13,10 @@ const routes: Array<RouteConfig> = [
     path: "/",
     component: Layout,
     children: [
-      //党员管理
       {
         path: "/record",
         name: "record",
-        component: ()=>import('../views/record.vue'),
+        component: () => import("../views/record.vue"),
         meta: {
           title: "出入信息-物流信息管理系统",
         },
@@ -25,7 +24,7 @@ const routes: Array<RouteConfig> = [
       {
         path: "permit",
         name: "permit",
-        component: ()=>import('../views/permit.vue'),
+        component: () => import("../views/permit.vue"),
         meta: {
           title: "通行证管理-物流信息管理系统",
         },
