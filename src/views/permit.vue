@@ -136,7 +136,7 @@ export default {
     loadPermit() {
       getPermits()
         .then((res) => {
-          this.data = res.data.overdue.map((el) => {
+          this.data = res.data.effective.map((el) => {
             return {
               ...el,
               status: (() => {

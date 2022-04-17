@@ -12,6 +12,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     component: Layout,
+    redirect: "/home",
     children: [
       {
         path: "/record",
